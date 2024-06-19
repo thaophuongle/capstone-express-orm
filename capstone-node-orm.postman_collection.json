@@ -1,0 +1,446 @@
+{
+	"info": {
+		"_postman_id": "c4401dd2-687a-4c8a-8027-17b043c4d837",
+		"name": "capstone-node-orm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32465306"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/user/sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"thao@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"fullName\": \"Thao Le\",\r\n    \"age\": \"18\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/sign-up",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"thao@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/sign-in",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/post/get-image-post",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/post/get-image-post",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"get-image-post"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/post/search-image-post?searchWord=one",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MTV9LCJpYXQiOjE3MTc2OTA2NDEsImV4cCI6MTczNDk3MDY0MX0.puoGuEr6BVH-j3BWET0hg9m-CuttrkEa9RGX6ihk_ec",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/post/search-image-post?searchWord=one",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"search-image-post"
+					],
+					"query": [
+						{
+							"key": "searchWord",
+							"value": "one"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/post/get-image-detail/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/post/get-image-detail/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"get-image-detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/post/get-comment/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/post/get-comment/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"get-comment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/post/check-image-saved/2/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/post/check-image-saved/2/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"check-image-saved",
+						"2",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/post/create-comment/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imageId\": \"3\",\r\n    \"content\": \"A new comment\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/post/create-comment/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"create-comment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/user-info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/user/user-info",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"user-info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/user-images",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/user/user-images",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"user-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/saved-images",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/user/saved-images",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"saved-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/post/delete-image/7",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/post/delete-image/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"delete-image",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/upload-image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/phuon/OneDrive/Pictures/Screenshots/Screenshot 2023-08-11 225141.png"
+						},
+						{
+							"key": "title",
+							"value": "New image",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "content",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/user/upload-image",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"upload-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/user-info",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Thao Le\",\r\n    \"age\": \"19\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/user-info",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"user-info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/user/update-avatar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6NCwia2V5IjoiamVOVjQ2In0sImlhdCI6MTcxODcyNDU0MiwiZXhwIjoxNzM2MDA0NTQyfQ.Uj_ZC_Pie_o5ox6RrSCQZAZw8w4kqYxRmjdNjh_IdT0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/C:/Users/phuon/OneDrive/Pictures/Screenshots/Screenshot 2023-08-11 205631.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/user/update-avatar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"update-avatar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
